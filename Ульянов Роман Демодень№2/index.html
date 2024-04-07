@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Bliss!!!</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__conteiner">
+        <img src="./img/nogame.jpg" alt="logo">
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#benefits">О Пользе</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#games">Игры</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./shop.html">Магазин</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="nav__link" href="tel:79235205071">+7 923 520 5071</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero__section">
+        <div class="container">
+          <div class="hero_flex">
+            <div class="hero__text">
+              <h1 class="h1">настольная игра</h1>
+              <p class="p1">Насто́льная игра́ — игра, основанная на манипуляции относительно небольшим набором предметов, которые могут целиком разместиться на столе или в руках играющих. Из настольных игр выделяют: игры со специальным полем, карточные игры, кости, солдатики и другие. Игры данной категории, в отличие от спортивных и видеоигр, не требуют активного перемещения игроков, наличия дополнительного технически сложного инвентаря или специальных сооружений, игровых площадок, полей.</p>
+              <button class="hero__button">купить</button>
+            </div>
+            <div class="hero__img">
+              <img src="./img/egypt_game.jpg" alt="1stboardgame">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="statistics__section">
+        <div class="container">
+          <p class="p2"><span class="statistics__h2">настольная игра</span> - это не просто качественный убийца времени, это целая культура!</p>
+            <ul class="section__list">
+              <li class="section__item"><span class="statistics_number">42</span><br>Доцент в области коммуникации Марк Вольф определил интерактивность как ключевую характеристику настольных игр. В результате, Вольф сформировал классификацию, подразделившую игры на 42 жанра.</li>
+              <li class="section__item"><span class="statistics_number">100</span><br>Клубов настольных игр по всей стране</li>
+              <li class="section__item"><span class="statistics_number">400000</span><br>Любителей настольных игр в России</li>
+              <li class="section__item"><span class="statistics_number">15 </span><br>Издательств настольных игр у нас в стране</li>
+            </ul>
+          </div>
+        </section>
+
+
+      <section id="benefits" class="Benefit__section">
+        <div class="container">
+          <h2 class="h2">Польза настольных игр </h2>
+          <div class="Benefit__content">
+            <ul class="section__list">
+              <li class="section__item"><span class="Benefit__text">Живое общение</span><br>Решив поиграть в настольные игры, мы обычно звоним или пишем друзьям, собираем семью за столом. Отсюда вытекает первый заметный плюсик настолок – сближение и объединение.</li>
+              <li class="section__item"><span class="Benefit__text">Эмоции</span><br>В процессе игры мы переживаем широкий спектр эмоций. Погружение в процесс, просчёт ходов, азарт в попытке обыграть соседа, радостное волнение перед победой, победа или проигрыш.</li>
+              <li class="section__item"><span class="Benefit__text">Не развитие, но улучшение некоторых навыков</span><br>Многоходовочки – ваш выход. Настольные игры учат планировать, анализировать варианты, разрабатывать стратегии и предугадывать действия соперников. Всё это развивает логику и мышление, глазомер и умение справляться со сложностями.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="games" class="section">
+        <div class="container">
+          <h2 class="h2">Яркие представители</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/Munchkin.jpg"></div>
+              <div class="swiper-slide"><img src="./img/rusi-protiv-yascherow.jpg"></div>
+              <div class="swiper-slide"><img src="./img/serdce-afriki.jpg"></div>
+              <div class="swiper-slide"><img src="./img/vcr-vozrozhdenie-apokalipsis.jpg"></div>
+              <div class="swiper-slide"><img src="./img/Bers.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+          });
+        </script>
+      </section>
+
+      <section class="section application">
+        <div class="container">
+          <div class="application_div">
+            <div>
+              <h3 class="h3_white">Успей купить со скидкой 10%</h3>
+              <span class="p1">Акция действует до 20 ноября 2024 года</span>
+            </div>
+
+             <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                 <input type="text" name="name" placeholder="имя" maxlength="15" required>
+                 <input type="tel" name="telephone" placeholder="телефон" required>
+                 <input type="email" name="email" placeholder="email" required>
+               <label class="label__custom">
+                 <input class="checkbox_disable" type="checkbox">
+                 <div class="chekbox__custom"></div>
+                   <span class="text_white">С правилами сайта ознакомлен и согласен</span>
+              </label>
+              <button class="form__button">оформить заявку</button>
+             </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer__conteiner">
+      <ul class="footer__list">
+        <li>© 2012-2024 Управляющая компания Объединенной сети «no game no life»</li>
+        <li>Представленная на сайте информация носит справочный характер и не является публичной офертой</li>
+        <li><a class="text_white" download="#">Пользовательское соглашение</a></li>
+      </ul>
+
+      <ul class="footer__list">
+        <li>11111, улица Уличная, дом 1 офис 1</li>
+        <li><a class="text_white" href="tel:70000000000">+7 000 000 00 00</a></li>
+        <li><a class="text_white" href="mailto:mail@mail.ru">mail@mail.ru</a></li>
+      </ul>
+
+      <ul class="footer__list">
+        <li><img src="./img/twitter.svg" alt="twitter"></li>
+        <li><img src="./img/facebook.svg" alt="facebook"></li>
+        <li><img src="./img/social.svg" alt="vkontakte"></li>
+        <li><img src="./img/instagram.svg" alt="instagram"></li>
+      </ul>
+    </footer>
+  </body>
+</html>
